@@ -5,3 +5,12 @@
 # Для всех остальных случаев не выводить ничего.
 
 # TODO: your code here
+x = int(input())
+if x % 3:
+    print('Foo')
+elif x % 5:
+    print('Bar')
+elif x % 3 and x % 5:
+    print('FooBar')
+else:
+    print()
