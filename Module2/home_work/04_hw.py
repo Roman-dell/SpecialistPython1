@@ -14,3 +14,13 @@
 #    #
 #    #
 ######
+
+size = int(input('Размер квадрата?'))
+
+a = '#' * size
+b = '#' + (' ' * (size - 2)) + '#'
+for i in range(1,size+1):
+    if i == size or i == 1:
+        print(a)
+    else:
+        print(b)
