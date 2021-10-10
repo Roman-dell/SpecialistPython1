@@ -29,15 +29,34 @@ staff = [
 # Вычислите:
 print("Имя и Фамилию сотрудника с самой высокой зарплатой:")
 
-# TODO: your code here
+max_emp = staff[0]
+for emp in staff:
+    if emp["salary"] > max_emp["salary"]:
+        max_emp =emp
+print("Имя и Фамилию сотрудника с самой высокой зарплатой:")
+print(f"{max_emp['name']} {max_emp['surname']}")
+
 
 print("Имя и Фамилию сотрудника с самой низкой зарплатой:")
 
-# TODO: your code here
+max_emp = staff[0]
+for emp in staff:
+    if emp["salary"] < max_emp["salary"]:
+        max_emp = emp
+print("Имя и Фамилию сотрудника с самой низкой зарплатой:")
+print(f"{max_emp['name']} {max_emp['surname']}")
+
 
 print("Среднеарифметическую зарплату всех сотрудников")
 
-# TODO: your code here
+count = 0
+sum_zp = 0
+for emp in staff:
+    sum_zp = sum_zp + emp['salary']
+    count += 1
+print("Среднеарифметическую зарплату всех сотрудников")
+print(int(sum_zp / count))
+
 
 print("Количество однофамильцев в организации")
 
