@@ -3,4 +3,9 @@
 
 names = ["Иван", "Ирина", "Вячеслав", "Василий", "Петр"]
 
-# TODO: your code here
+names = ["Иван", "Ирина", "Вячеслав", "Василий", "Петр"]
+new_name = " "
+for name in names:
+    if len(name) > len(new_name):
+        new_name = name
+print(new_name)
